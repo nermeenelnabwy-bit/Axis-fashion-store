@@ -19,7 +19,7 @@ The project was developed to apply front-end development concepts and build a co
 
 ### Products
 
-![Products](screenshots/product.png)
+![Products](screenshots/products.png)
 
 ### Shopping Cart
 
