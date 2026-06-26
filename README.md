@@ -1,5 +1,7 @@
 # Axis - Fashion E-Commerce Website
+## Live Demo
 
+https://nermeenelnabwy-bit.github.io/Axis-fashion-store/
 ## Overview
 
 Axis is a responsive front-end fashion e-commerce website developed as a collaborative university project by **Axis Team**. The website provides users with a modern and user-friendly shopping experience through an organized layout, responsive design, and interactive features.
