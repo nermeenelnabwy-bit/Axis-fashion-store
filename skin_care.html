@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Skin care products</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Skin_care_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="ChatGPT Image Apr 26, 2026, 09_50_21 PM.png" alt="Axis" width="50" height="50"
+                        class="logo-photo">
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Categories <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="girls.html">Women's Wear</a></li>
+                        <li><a href="men.html">Men's Wear</a></li>
+                        <li><a href="sports.html">Sports Wear</a></li>
+                        <li><a href="accessories.html">Accessories</a></li>
+                        <li><a href="shoes.html">Shoes</a></li>
+                        <li><a href="bags.html">Bags</a></li>
+                        <li><a href="skin_care.html">Skin Care</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="icons">
+                <div class="search">
+                    <a href="#">
+                        <input type="text" placeholder="Search..." class="search-input">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </div>
+                <div class="theme-toggle" id="themetoggle">
+                    <i class="fa-solid fa-moon" id="themeicon"></i>
+                </div>
+                <a href="sign_in.html">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+                <button id="logout-btn"  onclick="logout()">Logout</button>
+                <a href="cart.html">
+                    <div class="cart">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span id="cart-count">0</span>
+                    </div>
+                </a>
+            </div>
+        </nav>
+        <h1 class="skin">Skin care products</h1>
+    </header>
+    <div class="products">
+        <div class="product-card">
+            <img src="skin_care_photos/WhiteningRoutine.webp" alt="photo" class="skin-img"
+                style="cursor: pointer;"><br />
+            <h3>Whitening Routine</h3>
+            <p>Kolagra Whitening Routine is a complete skincare regimen designed to enhance skin radiance,
+                even out skin tone,and reduce the appearance of hyperpigmentation through
+                a balanced daily routine.tine combines cleansing, toning,
+                treatment, sun protection,
+            </p>
+            </br>
+            <span class="old">EGP799.99</span>
+            <span class="new">EGP 550.00</span>
+            </br></br>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+
+        </div>
+        <div class="product-card">
+            <img src="skin_care_photos/deodrant.webp" alt="photo" class="skin-img" style="cursor: pointer;"><br />
+            <h3>Kolagra deodrant</h3>
+            <p>
+                Experience long-lasting freshness together with the Kolagra Deodorant Roll-On Bundle,
+                designed specifically for both men and women.
+                This dual pack includes one deodorant roll-on for him and one for her,
+                ensuring 24-hour protection against sweat and odor.
+            </p>
+            </br>
+            <span class="old">EGP 300.00</span>
+            <span class="new">EGP 250.00</span>
+            </br></br>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+
+        </div>
+        <div class="product-card">
+            <img src="skin_care_photos/DailyRoutine.webp" alt="photo" class="skin-img" style="cursor: pointer;"><br />
+            <h3>Kolagra daily routine</h3>
+            <p>
+                Kolagra Daily Routine contains
+                ( Kolagra Facial wash 200 Ml + Toner 200 ML +
+                Sunscreen gel cream 60 ML
+                + Hyaluronic 30ML Roll on Berry 60 ML)
+            </p>
+            </br>
+            <span class="old">EGP 800.00</span>
+            <span class="new">EGP 600.00</span>
+            </br></br>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="product-card">
+            <img src="skin_care_photos/foot cream.webp" alt="photo" class="skin-img" style="cursor: pointer;"><br />
+            <h3>Kolagra foot cream</h3>
+            <p>
+                Key Benefits:
+                • 3.jojoba oil - Macadamia oil - Castor oil - Panthenol
+                • Kolagra foot cream with urea 10% repairs, softens,
+                soothes dry and cracked heels, designed to protect your feet by
+                preventing water loss, and promote new cell growth.
+            </p>
+            </br>
+            <span class="old">EGP 330.00</span>
+            <span class="new">EGP 164.00</span>
+            </br></br>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="product-card">
+            <img src="skin_care_photos/FacialCleanserandtonerMockup.webp" alt="photo" class="skin-img"
+                style="cursor: pointer;"><br />
+            <h3>Kolagra Facial cleanser</h3>
+            <p>
+                Kolagra Routine ( Facial wash with vitamin C 200Ml &
+                Brightening Toner Vitamin C 200Ml )
+            </p>
+            </br>
+            <span class="old">EGP 600.00</span>
+            <span class="new">EGP 449.99</span>
+            </br></br>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="product-card">
+            <img src="skin_care_photos/facial wash and whiting cream.webp" alt="photo" class="skin-img"
+                style="cursor: pointer;"><br />
+            <h3>Kolagra Facial wash and whiting cream</h3>
+            <p>
+                1-Gentle cleanser rich in vitamin C gives radiant skin to the skin and gradually
+                brightens the dark spots, Improving skin texture for softer, smoother, healthy skin,
+                and natural lightening with antioxidant properties.
+                2.-Whitening Cream is formulated with a highly concentrated dose of Alpha Arbutin,
+                A skin-brightening ingredient that works by reducing melanin production.
+            </p>
+            </br>
+            <span class="old">EGP 400.00</span>
+            <span class="new">EGP 299.99</span>
+            </br></br>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="product-card">
+            <img src="skin_care_photos/hyaluronic acid.webp" alt="photo" class="skin-img"
+                style="cursor: pointer;"><br />
+            <h3>Kolagra hyaluronic acid</h3>
+            <p>
+                Hyaluronic acid serum 1.5% + B5 help plump the look of skin and repair
+                by replenishing the skin’s moisture barrier and activate skin renewal.
+            </p>
+            </br>
+            <span class="old">EGP 335.00</span>
+            <span class="new">EGP 235.00</span>
+            </br></br>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="product-card">
+            <img src="skin_care_photos/cleansing gel for oily skin.webp" alt="photo" class="skin-img"
+                style="cursor: pointer;"><br />
+            <h3>Laroche cleansing gel</h3>
+            <p>
+                laroche cleansing gel for oily skin
+            </p>
+            </br>
+            <span class="old">EGP 1000.00</span>
+            <span class="new">EGP 500.00</span>
+            </br></br>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="product-card">
+            <img src="skin_care_photos/la roche sun screen.webp" alt="photo" class="skin-img"
+                style="cursor: pointer;"><br />
+            <h3>Laroche sunscreen</h3>
+            <p>
+                laroche sunscreen for all
+                skins protect skin from sun
+            </p>
+            </br>
+            <span class="old">EGP 2000.00</span>
+            <span class="new">EGP 1500.00</span>
+            </br></br>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="product-card">
+            <img src="skin_care_photos/misturizing_1.webp" alt="photo" class="skin-img" style="cursor: pointer;"><br />
+            <h3>Hydrensa moisturizing cream</h3>
+            <p>
+                .HYALURONIC ACID for moisturizing
+                • Restore skin barrier and retain moisture
+                • lock in skin’s moisture
+                • Soothing, protects skin barrier, essential ceramides.
+            </p>
+            </br>
+            <span class="old">EGP 204.00</span>
+            <span class="new">EGP 150.00</span>
+            </br></br>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="product-card">
+            <img src="skin_care_photos/oliy_skin_cleanser_b3_1.webp" alt="photo" class="skin-img"
+                style="cursor: pointer;"><br />
+            <h3>Kolagra cleanser</h3>
+            <p>
+                A cleanser formulated for oily and acne-prone skin,
+                developed to provide deep cleansing while maintaining
+                the skin’s natural moisture balance.
+            </p>
+            </br>
+            <span class="old">EGP 200.00</span>
+            <span class="new">EGP 116.00</span>
+            </br></br>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="product-card">
+            <img src="skin_care_photos/sun screen and hyralonic serum.webp" alt="photo" class="skin-img"
+                style="cursor: pointer;"><br />
+            <h3>Kolagra sun screen and hyaluronic serum</h3>
+            <p>
+                Broad spectrum Gel cream with antioxidant to
+                maximize protection from UVA&UVB which can destroy skin.
+                Hyaluronic acid serum 1.5% + B5 help plump the look of skin
+                and repair by replenishing the skin’s moisture barrier and
+                activate skin renewal skin immediately recovers bounce.
+            </p>
+            </br>
+            <span class="old">EGP 800.00</span>
+            <span class="new">EGP 400.00</span>
+            </br></br>
+            <button class="cart-btn" onclick="addToCart()">
+                 <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+    </div>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2 class="logo-text">Axis</h3>
+                    <p>The point where style meets value.</p>
+            </div>
+
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Axis Store | Designed by Axis team</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="Skin_care_script.js"></script>
+</body>
+
+</html>

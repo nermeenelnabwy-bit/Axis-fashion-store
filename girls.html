@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="girls.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <title>Women's Wear </title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="ChatGPT Image Apr 26, 2026, 09_50_21 PM.png" alt="Axis" width="50" height="50"
+                        class="logo-photo">
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Categories <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="girls.html">Women's Wear</a></li>
+                        <li><a href="men.html">Men's Wear</a></li>
+                        <li><a href="sports.html">Sports Wear</a></li>
+                        <li><a href="accessories.html">Accessories</a></li>
+                        <li><a href="shoes.html">Shoes</a></li>
+                        <li><a href="bags.html">Bags</a></li>
+                        <li><a href="skin_care.html">Skin Care</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="icons">
+                <div class="search">
+                    <a href="#">
+                        <input type="text" placeholder="Search..." class="search-input">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </div>
+
+                <div class="theme-toggle" id="themetoggle">
+                    <i class="fa-solid fa-moon" id="themeicon"></i>
+                </div>
+                <a href="sign_in.html">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+                <button id="logout-btn"  onclick="logout()">Logout</button>
+                <a href="cart.html">
+                    <div class="cart">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span id="cart-count">0</span>
+                    </div>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+
+    </br>
+    <h1 class="text"> Women's Wear </h1>
+    <style>
+        .text {
+            text-align: center;
+            color: var(--text-navy) !important;
+        }
+
+        nav {
+            text-align: center;
+            color: rgb(6, 16, 51);
+        }
+    </style>
+
+
+    <div class="products">
+        <div class="product-card">
+            <img decoding="async" src="photos girls/photo 1.jpeg" alt="try again">
+
+            <h3> </br>Evening Dress</h3>
+            <p> Soft Cotton Fabric , perfect for evening events</p>
+            </br>
+            <span class="old">1000 EGP </span>
+            <span class="new">750 EGP </span>
+            </br> </br>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+
+        </div>
+        <div class="product-card">
+            <img decoding="async" src="photos girls/photo 2.jpeg" alt="try again">
+            <h3> </br>Burgundy Bow-Shoulder Mini Flare Dress</h3>
+            <p>Make a statement with our signature bow-detail mini dress</p>
+            </br>
+            <span class="old">1500 EGP </span>
+            <span class="new">1000 EGP </span>
+            </br> </br>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="product-card">
+            <img decoding="async" src="photos girls/photo 3.jpeg" alt="try again">
+            <h3></br>Sweet Bow Aesthetic Sweatshirt</h3>
+            <p> ​Cute, cozy, and perfect for your every day coquette look.</p>
+            </br>
+            <span class="old">1050 EGP </span>
+            <span class="new">900 EGP</span>
+            </br></br>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="product-card">
+            <img decoding="async" src="photos girls/photo 4.jpeg" alt="try again">
+            <h3></br>Beach Stamp Hoodie</h3>
+            <p>A clean, oversized white hoodie featuring navy blue coastal stamps for an effortless beachside aesthetic.
+            </p>
+            </br>
+            <span class="old">900 EGP </span>
+            <span class="new">750 EGP</span>
+            </br></br>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="product-card">
+            <img decoding="async" src="photos girls/photo 5.jpeg" alt="try again">
+            <h3></br>The Lavender Meadow Pinafore</h3>
+            <p>A dreamy lavender corduroy pinafore dress with dainty floral embroidery, layered over a white tee for a
+                sweet,
+                vintage-inspired look.</p>
+            </br>
+            <span class="old">1200 EGP </span>
+            <span class="new">800 EGP</span>
+            </br></br>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="product-card">
+            <img decoding="async" src="photos girls/photo 6.jpeg" alt="try again">
+            <h3></br>The Mon Cheri Hoodie</h3>
+            <p>A charming cream-colored hoodie decorated with a sweet all-over cherry pattern for a playful and cozy
+                aesthetic.</p>
+            </br>
+            <span class="old">1500 EGP </span>
+            <span class="new">1200 EGP</span>
+            </br></br>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="product-card">
+            <img decoding="async" src="photos girls/photo 7.jpeg" alt="try again">
+            <h3></br>The Midnight Wide-Legs</h3>
+            <p>Bold, high-waisted wide-leg jeans in a faded black wash, featuring vintage-inspired whiskering for an
+                edgy, relaxed fit.</p>
+            </br>
+            <span class="old">1000 EGP </span>
+            <span class="new">500 EGP</span>
+            </br></br>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="product-card">
+            <img decoding="async" src="photos girls/photo 8.jpeg" alt="try again">
+            <h3></br>The Blue Morpho Turtleneck</h3>
+            <p>A cozy slate-blue cropped turtleneck featuring a dainty butterfly embroidery and chunky ribbed knit for a
+                soft, dreamy
+                look.</p>
+            </br>
+            <span class="old">1700 EGP </span>
+            <span class="new">1500 EGP</span>
+            </br></br>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="product-card">
+            <img decoding="async" src="photos girls/photo 9.jpeg" alt="try again">
+            <h3></br>The Belle Bow Knit</h3>
+            <p>An elegant cream ribbed sweater adorned with dainty black satin bows for a chic, feminine, and trendy
+                "coquette" vibe.</p>
+            </br>
+            <span class="old">2000 EGP </span>
+            <span class="new">1500 EGP</span>
+            </br></br>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="product-card">
+            <img decoding="async" src="photos girls/photo 10.jpeg" alt="try again">
+            <h3></br>The Chérie Bow Tee</h3>
+            <p>A vintage-style cream oversized tee featuring burgundy bow graphics and romantic French typography for a
+                chic coquette
+                aesthetic.</p>
+            </br>
+            <span class="old">1500 EGP </span>
+            <span class="new">1000 EGP</span>
+            </br></br>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="product-card">
+            <img decoding="async" src="photos girls/photo 11.jpeg" alt="try again">
+            <h3></br>The Memento Hoodie</h3>
+            <p>A minimalist cream hoodie featuring a motivational quote, lavender drawstrings, and cute embroidered
+                heart details on
+                the cuffs for a soft, aesthetic vibe.</p>
+            </br>
+            <span class="old">800 EGP </span>
+            <span class="new">500 EGP</span>
+            </br></br>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="product-card">
+            <img decoding="async" src="photos girls/photo 12.jpeg" alt="try again">
+            <h3></br>The Sweetheart Scallop Slacks</h3>
+            <p>Dreamy wide-leg trousers featuring a charming scalloped hem and a vertical heart-print detail in soft
+                pastel tones.</p>
+            </br>
+            <span class="old">500 EGP </span>
+            <span class="new">250 EGP</span>
+            </br></br>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="product-card">
+            <img decoding="async" src="photos girls/photo 13.jpeg" alt="try again">
+            <h3></br>The Primrose Meadow Sweater</h3>
+            <p>A whimsical pastel sweater featuring delicate floral embroidery and textured pom-pom details for a sweet,
+                vintage-inspired aesthetic.</p>
+            </br>
+            <span class="old">1500 EGP </span>
+            <span class="new">1000 EGP</span>
+            </br></br>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="product-card">
+            <img decoding="async" src="photos girls/photo 14.jpeg" alt="try again">
+            <h3></br>The Library Muse Set</h3>
+            <p>A scholarly dark academia look combining a distressed taupe sweater with a pleated plaid skirt and a
+                leather satchel.</p>
+            </br>
+            <span class="old">2000 EGP </span>
+            <span class="new">1500 EGP</span>
+            </br></br>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="product-card">
+            <img decoding="async" src="photos girls/photo 15.jpeg" alt="try again">
+            <h3></br>The Guac-and-Roll Set</h3>
+            <p>A fresh and quirky lounge set featuring a solid sage green crop top and high-waisted white trousers with
+                a fun all-over
+                avocado pattern.</p>
+            </br>
+            <span class="old">1700 EGP </span>
+            <span class="new">1500 EGP</span>
+            </br></br>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="product-card">
+            <img decoding="async" src="photos girls/photo 16.jpeg" alt="try again">
+            <h3></br>The Lavender Love Set</h3>
+            <p>A whimsical lavender and white set featuring a heart-patch sweater paired with a flowing knit maxi skirt
+                for a sweet,
+                romantic aesthetic.</p>
+            </br>
+            <span class="old">2500 EGP </span>
+            <span class="new">2000 EGP</span>
+            </br></br>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="product-card">
+            <img decoding="async" src="photos girls/photo 17.jpeg" alt="try again">
+            <h3></br>Cable Knit Sweater Vest Combo</h3>
+            <p>A chic 2-in-1 top combining a rich brown cable-knit vest with a crisp white collared shirt and dramatic
+                puff sleeves for
+                a perfect academic aesthetic.</p>
+            </br>
+            <span class="old">1000 EGP </span>
+            <span class="new">500 EGP</span>
+            </br></br>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="product-card">
+            <img decoding="async" src="photos girls/photo 18.jpeg" alt="try again">
+            <h3></br>The Rosewater Knit Hoodie</h3>
+            <p>A charming cream and pink colorblock knit hoodie featuring a button-down front and cozy balloon sleeves
+                for a soft,
+                aesthetic look.</p>
+            </br>
+            <span class="old">1000 EGP </span>
+            <span class="new">750 EGP</span>
+            </br></br>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="product-card">
+            <img decoding="async" src="photos girls/photo 19.jpeg" alt="try again">
+            <h3></br>The Blue Crush Heart Sweater</h3>
+            <p>A dreamy oversized blue sweater featuring soft, 3D white heart patches for a cozy and whimsical
+                aesthetic.</p>
+            </br>
+            <span class="old">750 EGP </span>
+            <span class="new">500 EGP</span>
+            </br></br>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="product-card">
+            <img decoding="async" src="photos girls/photo 27.jpeg" alt="try again">
+            <h3></br>The Mahogany Drape Blazer</h3>
+            <p>An elegant mahogany open-front blazer featuring fluid waterfall lapels and oversized cuffed sleeves for a
+                sophisticated,
+                modern silhouette.</p>
+            </br>
+            <span class="old">1750 EGP </span>
+            <span class="new">1500 EGP</span>
+            </br></br>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+    </div>
+    <footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-section about">
+            <h2 class="logo-text">Axis</h2>
+            <p>The point where style meets value.</p>
+        </div>
+
+        <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Axis Store | Designed by Axis team</p>
+    </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="girls.js"></script>
+</body>
+</html>

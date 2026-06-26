@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories Collection</title>
+    <link rel="stylesheet" href="accessories.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="ChatGPT Image Apr 26, 2026, 09_50_21 PM.png" alt="Axis" width="50" height="50"
+                        class="logo-photo">
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Categories <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="girls.html">Women's Wear</a></li>
+                        <li><a href="men.html">Men's Wear</a></li>
+                        <li><a href="sports.html">Sports Wear</a></li>
+                        <li><a href="accessories.html">Accessories</a></li>
+                        <li><a href="shoes.html">Shoes</a></li>
+                        <li><a href="bags.html">Bags</a></li>
+                        <li><a href="skin_care.html">Skin Care</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="icons">
+                <div class="search">
+                    <a href="#">
+                        <input type="text" placeholder="Search..." class="search-input">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </div>
+
+                <div class="theme-toggle" id="themetoggle">
+                    <i class="fa-solid fa-moon" id="themeicon"></i>
+                </div>
+                <a href="sign_in.html">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+                <button id="logout-btn" onclick="logout()">Logout</button>
+                <a href="cart.html">
+                    <div class="cart">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span id="cart-count">0</span>
+                    </div>
+                </a>
+
+            </div>
+        </nav>
+    </header>
+    </br>
+    <h1> Accessories Collection </h1>
+    </br>
+    <style>
+        body h1 {
+            text-align: center;
+            text-align: center;
+            color: var(--text-navy) !important;
+        }
+
+
+        nav {
+            text-align: center;
+            color: rgb(6, 16, 51);
+        }
+    </style>
+
+    <div class="products">
+        <div class="product-card"><img src="accessories-photos/acc1.jpeg">
+            <h3></br>Crystal-Encrusted V-Necklace</h3>
+            <p>A timeless piece that adds a touch of sophistication to any outfit. Features sparkling crystals</p><span
+                class="new">600 EGP</span><br><br><button class="cart-btn" onclick="addToCart()"><i
+                    class="fa-solid fa-bag-shopping"></i>
+                <span class="cart-text">add to cart</span></button>
+        </div>
+        <div class="product-card"><img src="accessories-photos/acc2.jpeg">
+            <h3></br>​Golden Heart Pendant Necklace</h3>
+            <p>A polished golden heart pendant for a romantic, elegant look.</p><span class="new">500
+                EGP</span><br><br><button class="cart-btn" onclick="addToCart()"><i
+                    class="fa-solid fa-bag-shopping"></i> <span class="cart-text">add to cart</span></button>
+        </div>
+
+        <div class="product-card"><img src="accessories-photos/acc3.jpeg">
+            <h3></br>Boho Hand Chain</h3>
+            <p>A delicate gold slave bracelet with a minimalist circular charm</p><span class="new">550
+                EGP</span><br><br><button class="cart-btn" onclick="addToCart()"><i
+                    class="fa-solid fa-bag-shopping"></i>
+                <span class="cart-text">add to cart</span> </button>
+        </div>
+        <div class="product-card"><img src="accessories-photos/acc4.jpeg">
+            <h3></br>Royal Zircon Set</h3>
+            <p>Luxury 3-piece gold set featuring sparkling emerald-cut zircon stones.</p><span class="new">1800
+                EGP</span><br><br><button class="cart-btn" onclick="addToCart()"><i
+                    class="fa-solid fa-bag-shopping"></i> <span class="cart-text">add to cart</span></button>
+        </div>
+
+        <div class="product-card"><img src="accessories-photos/acc5.jpeg">
+            <h3></br>Multi-Layer Cuff</h3>
+            <p>A bold, structured gold bangle crafted from multiple polished wires for a layered effect.
+                ​</p><span class="new">480 EGP</span><br><br><button class="cart-btn" onclick="addToCart()"><i
+                    class="fa-solid fa-bag-shopping"></i> <span class="cart-text">add to cart</span></button>
+        </div>
+
+        <div class="product-card"><img src="accessories-photos/acc6.jpeg">
+            <h3></br>Geometric Gold Ring</h3>
+            <p>A unique, modern gold ring with a textured vertical bar design
+                ​</p><span class="new">200 EGP</span><br><br><button class="cart-btn" onclick="addToCart()"><i
+                    class="fa-solid fa-bag-shopping"></i><span class="cart-text">add to cart</span></button>
+        </div>
+
+        <div class="product-card"><img src="accessories-photos/acc7.jpeg">
+            <h3></br>Bamboo Gold Bangle</h3>
+            <p>​
+                A sleek, open-cuff bangle featuring a nature-inspired bamboo joint design</p><span class="new">350
+                EGP</span><br><br><button class="cart-btn" onclick="addToCart()"><i
+                    class="fa-solid fa-bag-shopping"></i> <span class="cart-text">add to cart</span></button>
+        </div>
+
+        <div class="product-card"><img src="accessories-photos/acc8.jpeg">
+            <h3></br>Eternal Knot Bangle</h3>
+            <p>A polished gold-tone cuff featuring a stylish center knot design</p><span class="new">350
+                EGP</span><br><br><button class="cart-btn" onclick="addToCart()"><i
+                    class="fa-solid fa-bag-shopping"></i> <span class="cart-text">add to cart</span></button>
+        </div>
+        <div class="product-card"><img src="accessories-photos/acc9.jpeg">
+            <h3></br>Twisted Rope Bangle</h3>
+            <p>A classic gold-toned open cuff with a sophisticated twisted rope texture</p><span class="new">350
+                EGP</span><br><br><button class="cart-btn" onclick="addToCart()"><i
+                    class="fa-solid fa-bag-shopping"></i> <span class="cart-text">add to cart</span></button>
+        </div>
+
+        <div class="product-card"><img src="accessories-photos/acc10.jpeg">
+            <h3></br>Twisted Gold Cuff</h3>
+            <p>Elegant open bracelet with a minimalist braided design</p><span class="new">350 EGP</span><br><br><button
+                class="cart-btn"><i class="fa-solid fa-bag-shopping"></i> <span class="cart-text">add to
+                    cart</span></button>
+        </div>
+
+        <div class="product-card"><img src="accessories-photos/acc11.jpeg">
+            <h3></br>Gold Bow & Heart Necklace</h3>
+            <p>Delicate Y-style chain featuring charming gold bows and a heart pendant</p><span class="new">400
+                EGP</span><br><br><button class="cart-btn" onclick="addToCart()"><i
+                    class="fa-solid fa-bag-shopping"></i> <span class="cart-text">add to cart</span></button>
+        </div>
+
+        <div class="product-card"><img src="accessories-photos/acc12.jpeg">
+            <h3></br>Gold Mesh Bracelet</h3>
+            <p>Classic textured mesh chain with gold bead accents and adjustable clasp</p><span class="new">600
+                EGP</span><br><br><button class="cart-btn" onclick="addToCart()"><i
+                    class="fa-solid fa-bag-shopping"></i> <span class="cart-text">add to cart</span></button>
+        </div>
+
+        <div class="product-card"><img src="accessories-photos/acc13.jpeg">
+            <h3></br>Butterfly & Bar Y-Necklace</h3>
+            <p>Elegant long drop necklace with alternating butterfly charms and polished gold bars</p><span
+                class="new">700 EGP</span><br><br><button class="cart-btn" onclick="addToCart()"><i
+                    class="fa-solid fa-bag-shopping"></i>
+                <span class="cart-text">add to cart</span></button>
+        </div>
+
+        <div class="product-card"><img src="accessories-photos/acc14.jpeg">
+            <h3></br>Textured Gold Hoops</h3>
+            <p>Chic hoop earrings featuring a unique sparkling crushed-gold texture</p><span class="new">400
+                EGP</span><br><br><button class="cart-btn" onclick="addToCart()"><i
+                    class="fa-solid fa-bag-shopping"></i> <span class="cart-text">add to cart</span></button>
+        </div>
+
+        <div class="product-card"><img src="accessories-photos/acc15.jpeg">
+            <h3></br>Layered Gold Charm Anklet</h3>
+            <p>Stylish triple-layered anklet featuring delicate gold coins and bead accents.</p><span class="new">380
+                EGP</span><br><br><button class="cart-btn" onclick="addToCart()"><i
+                    class="fa-solid fa-bag-shopping"></i> <span class="cart-text">add to cart</span></button>
+        </div>
+
+        <div class="product-card"><img src="accessories-photos/acc16.jpeg">
+            <h3></br>Fluid Gold Open Bangle</h3>
+            <p>Modern minimalist bangle featuring a sleek, organic teardrop design</p><span class="new">400
+                EGP</span><br><br><button class="cart-btn" onclick="addToCart()"><i
+                    class="fa-solid fa-bag-shopping"></i> <span class="cart-text">add to cart</span></button>
+        </div>
+
+        <div class="product-card"><img src="accessories-photos/acc17.jpeg">
+            <h3></br>Serpenti Style Wrap Watch</h3>
+            <p>Luxury gold-tone watch with a flexible spiral band and a sleek drop-shaped dial</p><span class="new">1200
+                EGP</span><br><br><button class="cart-btn" onclick="addToCart()"><i
+                    class="fa-solid fa-bag-shopping"></i> <span class="cart-text">add to cart</span></button>
+        </div>
+
+        <div class="product-card"><img src="accessories-photos/acc18.jpeg">
+            <h3></br>Curb Chain Ring</h3>
+            <p>Modern open ring with a classic intertwined link design and crystal accents</p><span class="new">500
+                EGP</span><br><br><button class="cart-btn" onclick="addToCart()"><i
+                    class="fa-solid fa-bag-shopping"></i> <span class="cart-text">add to cart</span></button>
+        </div>
+
+        <div class="product-card"><img src="accessories-photos/acc19.jpeg">
+            <h3></br>Classic Halo Engagement Ring</h3>
+            <p>Luxurious gold ring with a brilliant cushion-cut stone and diamond-paved band</p><span class="new">1400
+                EGP</span><br><br><button class="cart-btn" onclick="addToCart()"><i
+                    class="fa-solid fa-bag-shopping"></i> <span class="cart-text">add to cart</span></button>
+        </div>
+
+        <div class="product-card"><img src="accessories-photos/acc20.jpeg">
+            <h3></br>Gold Floral Statement Ring</h3>
+            <p>Bold gold-tone ring featuring a beautiful row of textured blossoming flowers</p><span class="new">200
+                EGP</span><br><br><button class="cart-btn" onclick="addToCart()"><i
+                    class="fa-solid fa-bag-shopping"></i><span class="cart-text">add to cart</span></button>
+        </div>
+
+        <div class="product-card"><img src="accessories-photos/acc21.jpeg">
+            <h3></br>Gold Teardrop Jewelry Set</h3>
+            <p>Modern minimalist set featuring a sleek snake chain necklace and matching teardrop stud earrings</p><span
+                class="new">900 EGP</span><br><br><button class="cart-btn" onclick="addToCart()"><i
+                    class="fa-solid fa-bag-shopping"></i>
+                <span class="cart-text">add to cart</span></button>
+        </div>
+
+        <div class="product-card"><img src="accessories-photos/acc22.jpeg">
+            <h3></br>Gold Herringbone Set</h3>
+            <p>Elegant flat-chain necklace and bracelet set with a tiny heart charm</p><span class="new">800
+                EGP</span><br><br><button class="cart-btn" onclick="addToCart()"><i
+                    class="fa-solid fa-bag-shopping"></i><span class="cart-text">add to cart</span></button>
+        </div>
+
+        <div class="product-card"><img src="accessories-photos/acc23.jpeg">
+            <h3></br>Luxury Diamond Solitaire Ring</h3>
+            <p>Stunning silver-tone engagement ring with a large brilliant center stone and full diamond-paved band</p>
+            <span class="new">2000 EGP</span><br><br><button class="cart-btn" onclick="addToCart()"><i
+                    class="fa-solid fa-bag-shopping"></i>
+                <span class="cart-text">add to cart</span></button>
+        </div>
+        <div class="product-card"><img src="accessories-photos/acc24.jpeg">
+            <h3></br>Gold Flower Bolo Bracelet</h3>
+            <p>Delicate gold-tone sliding bracelet featuring a sparkling row of five crystal flowers</p>
+            <span class="new">400 EGP</span><br><br><button class="cart-btn" onclick="addToCart()"><i
+                    class="fa-solid fa-bag-shopping"></i>
+                <span class="cart-text">add to cart</span></button>
+        </div>
+
+    </div>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2 class="logo-text">Axis</h2>
+                <p>The point where style meets value.</p>
+            </div>
+
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Axis Store | Designed by Axis team</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="accessories.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="sports.css">
+    <title>Sports Fits</title>
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="ChatGPT Image Apr 26, 2026, 09_50_21 PM.png" alt="Axis" width="50" height="50"
+                        class="logo-photo">
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Categories <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="girls.html">Women's Wear</a></li>
+                        <li><a href="men.html">Men's Wear</a></li>
+                        <li><a href="sports.html">Sports Wear</a></li>
+                        <li><a href="accessories.html">Accessories</a></li>
+                        <li><a href="shoes.html">Shoes</a></li>
+                        <li><a href="bags.html">Bags</a></li>
+                        <li><a href="skin_care.html">Skin Care</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          <div class="icons">
+                <div class="search">
+                    <a href="#">
+                        <input type="text" placeholder="Search..." class="search-input">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </div>
+
+                <div class="theme-toggle" id="themetoggle">
+                    <i class="fa-solid fa-moon" id="themeicon"></i>
+                </div>
+                <a href="sign_in.html">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+                <button id="logout-btn"  onclick="logout()">Logout</button>
+                <a href="cart.html">
+                    <div class="cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span id="cart-count">0</span>
+                    </div>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <h1>Sports Fits</h1>
+    <h2 class="toGym">Let's go to gym..!</h2>
+    <style>
+        h1,
+        h2 {
+            text-align: center;
+            color: rgb(6, 16, 51);
+            margin: 20px;
+        }
+
+        nav {
+            text-align: center;
+            color: rgb(6, 16, 51);
+        }
+    </style>
+    <main>
+        <section>
+            <img class="imggg" src="spotrts photos/photo2.jpg" alt="">
+            <h3>The Essential Leggings</h3>
+            <p>High-rise. Soft-touch. Sculpting fit.</p>
+            <p>Four timeless shades. One perfect feel.</p>
+            <p>Made to move. Designed to stand out.</p>
+            <span class="old">750 EGP </span>
+            <span class="new">699 EGP </span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </section>
+
+
+        <section>
+            <img class="imggg" src="spotrts photos/photo1.jpg" alt="">
+            <h3>Nike Pro Set</h3>
+            <p>Soft-touch,braethable fabric with stretch.</p>
+            <p>Cropped silhouette. High-rise support.</p>
+            <p>Made to move. Designed to stand out.</p>
+            <span class="old">2000 EGP </span>
+            <span class="new">1799 EGP </span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </section>
+
+
+        <section>
+            <img class="imggg" src="spotrts photos/photo3.jpg" alt="">
+            <h3>Nike Visor</h3>
+            <p>Lightweight. Breathable. Adjustable fit.</p>
+            <p>Sun protection without the weight.</p>
+            <p>Three essential shades.</p>
+            <span class="old">250 EGP </span>
+            <span class="new">190 EGP </span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </section>
+
+
+        <section>
+            <img class="imggg" src="spotrts photos/download (10).jpg" alt="">
+            <h3>Nike Track Pants</h3>
+            <p>Relaxed fit. Lightweight woven fabric.</p>
+            <p>Elastic waistband. Side pockets.</p>
+            <p>From training to street.</p>
+            <span class="old">700 EGP </span>
+            <span class="new">650 EGP </span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </section>
+
+
+        <section>
+            <img class="imggg" src="spotrts photos/photo8.jpg" alt="">
+            <h3>Women’s Training Set</h3>
+            <p>Matching sports bra and shorts in neutral</p>
+            <p>tones. Available colors: Brown, Beige,</p>
+            <p> Off-White, White</p>
+            <span class="old">450 EGP </span>
+            <span class="new">300 EGP </span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </section>
+
+
+        <section>
+            <img class="imggg" src="spotrts photos/download (14).jpg" alt="">
+            <h3>The Matching Set</h3>
+            <p>Fitted tee. High-rise leggings.</p>
+            <p>Soft, stretch fabric. Second-skin feel.</p>
+            <p>Five colors. One perfect fit.</p>
+            <span class="old">750 EGP </span>
+            <span class="new">699 EGP </span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </section>
+
+
+        <section>
+            <img class="imggg" src="spotrts photos/download (15).jpg" alt="">
+            <h3>The Lounge Pant</h3>
+            <p>Soft fleece. Relaxed fit.</p>
+            <p>Elastic waistband.</p>
+            <p>Off-duty comfort. All-day style.</p>
+            <p>White. Grey. Black.</p>
+            <span class="old">750 EGP </span>
+            <span class="new">699 EGP </span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </section>
+
+
+        <section>
+            <img class="imggg" src="spotrts photos/download (17).jpg" alt="">
+            <h3>Adidas Tracksuit</h3>
+            <p>Lightweight woven fabric.</p>
+            <p>Water-resistant finish.</p>
+            <p>Full-zip jacket. Tapered pants.</p>
+            <p>Classic contrast design.</p>
+            <span class="old">1700 EGP </span>
+            <span class="new">1599EGP </span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </section>
+
+
+        <section>
+            <img class="imggg" src="spotrts photos/download (18).jpg" alt="">
+            <h3>White Tracksuit</h3>
+            <p>Clean contrast piping.</p>
+            <p>Pure. Timeless. Water-resistant</p>
+            <p>woven fabric with a soft, fluid drape.</p>
+            <span class="old">1800 EGP </span>
+            <span class="new">1650 EGP </span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </section>
+
+
+        <section>
+            <img class="imggg" src="spotrts photos/download (28).jpg" alt="">
+            <h3>The Off-Duty Set</h3>
+            <p>Soft fleece crew. Tapered joggers</p>
+            <p>Strappy sports bra.Comfort first.</p>
+            <p>Sky Blue. Black.</p>
+            <span class="old">1650 EGP </span>
+            <span class="new">1500 EGP </span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </section>
+
+
+        <section>
+            <img class="imggg" src="spotrts photos/download (20).jpg" alt="">
+            <h3>Adidas Track Jacket</h3>
+            <p>Classic Firebird silhouette.</p>
+            <p>Iconic 3-Stripes.Soft tricot fabric.</p>
+            <p>Full-zip closure.White. Grey. Black.</p>
+            <span class="old">600 EGP </span>
+            <span class="new">550 EGP </span>
+            </br>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </section>
+
+
+        <section>
+            <img class="imggg" src="spotrts photos/download.jpg" alt="">
+            <h3>The Cropped Track Jacket</h3>
+            <p>Lightweight woven fabric with a clean.</p>
+            <p>Minimal Swoosh. Ribbed cuffs and hem.</p>
+            <p>Sport style. Street ready.</p>
+            <span class="old">700 EGP </span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </section>
+
+
+        <section>
+            <img class="imggg" src="spotrts photos/download (30).jpg" alt="">
+            <h3>Compression Ankle Support</h3>
+            <p>Adjustable strap. Breathable knit fabric.</p>
+            <p>Lightweight stability. All-day comfort.</p>
+            <p>8 colors available.</p>
+            <span class="new">100 EGP </span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </section>
+
+
+        <section>
+            <img class="imggg" src="spotrts photos/download (29).jpg" alt="">
+            <h3>Nike Dri-FIT Tee</h3>
+            <p>Lightweight. Sweat-wicking.</p>
+            <p>Slim fit. Curved hem.</p>
+            <p>Black. White. Grey. Blue.</p>
+            <span class="old">200 EGP </span>
+            <span class="new">130 EGP </span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </section>
+
+
+        <section>
+            <img class="imggg" src="spotrts photos/download (5).jpg" alt="">
+            <h3>3-Piece Training Set</h3>
+            <p>Quarter-zip pullover. Training</p>
+            <p>shorts. Compression tights.</p>
+            <p>For running. For training.</p>
+            <span class="old">1500 EGP </span>
+            <span class="new">1200 EGP </span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </section>
+
+
+        <section>
+            <img class="imggg" src="spotrts photos/Guantes Gym.jpg" alt="">
+            <h3>PUMA Training Gloves</h3>
+            <p>A refined essential for your workout. </p>
+            <p>Lightweight design with a secure fit.</p>
+            <p>Burgundy/Black</p>
+            <span class="old">250 EGP </span>
+            <span class="new">200 EGP </span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </section>
+
+
+        <section>
+            <img class="imggg" src="spotrts photos/Nike head bands thin.jpg" alt="">
+            <h3>Nike Sport Headbands</h3>
+            <p>Designed to keep hair in place.</p>
+            <p>Comfortable for all-day wear.</p>
+            <p>Black, White, Blue, Pink, Red.</p>
+            <span class="old">60 EGP </span>
+            <span class="new">40 EGP </span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </section>
+
+
+        <section>
+            <img class="imggg" src="spotrts photos/photo4.jpg" alt="">
+            <h3>Women’s Gym Essentials Set</h3>
+            <p>Four pieces. Full coverage.</p>
+            <p>Features: Oversized hoodie, supportive </p>
+            <p>bra, sculpting leggings,</p>
+            <span class="old">1600 EGP </span>
+            <span class="new">1450 EGP </span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </section>
+
+
+        <section>
+            <img class="imggg" src="spotrts photos/download (31).jpg" alt="">
+            <h3>Nike Training Shorts</h3>
+            <p>Lightweight. Breathable.</p>
+            <p>Elastic waistband.</p>
+            <p>Made to move. Built to last.</p>
+            <span class="old">600 EGP </span>
+            <span class="new">550 EGP </span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </section>
+
+
+        <section>
+            <img class="imggg" src="spotrts photos/photo5.jpg" alt="">
+            <h3>Training Resistance Bands</h3>
+            <p>Fabric Resistance</p>
+            <p>Upgrade your training with these bands.</p>
+            <p>Colors: Mint, Blush, Lavender</p>
+            <span class="old">130 EGP </span>
+            <span class="new">100 EGP </span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </section>
+
+
+        <section>
+            <img class="imggg" src="spotrts photos/photo6.jpg" alt="">
+            <h3>Complete Workout Look</h3>
+            <p>Track Jacket + Sports Bra + Leggings.</p>
+            <p>A curated mix of sportswear essentials.</p>
+            <p>Clean design for gym to street.</p>
+            <span class="old">1530 EGP </span>
+            <span class="new">1490 EGP </span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </section>
+
+
+        <section>
+            <img class="imggg" src="spotrts photos/Gym .jpg" alt="">
+            <h3>Men’s Running 3-Piece Set</h3>
+            <p>Complete your look with this set.</p>
+            <p>Includes a short-sleeve top,</p>
+            <p>shorts, and compression tights</p>
+            <span class="old">1800 EGP </span>
+            <span class="new">1699 EGP </span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </section>
+
+        <section>
+            <img class="imggg" src="spotrts photos/Sporty.jpg" alt="">
+            <h3>Women’s Training 3-Piece</h3>
+            <p>Effortless style for your workout.</p>
+            <p> Designed for everyday training</p>
+            <p>A refined essential for your gym.</p>
+            <span class="old">2000 EGP </span>
+            <span class="new">1700 EGP </span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </section>
+
+
+        <section>
+            <img class="imggg" src="spotrts photos/photo7.jpg" alt="">
+            <h3>Men’s Training Bundle</h3>
+            <p>Four layers. Total performance.</p>
+            <p>Breathable, and built to perform</p>
+            <p>Designed for layering.</p>
+            <span class="old">2700 EGP </span>
+            <span class="new">2200 EGP </span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </section>
+    </main>
+    <footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-section about">
+            <h2 class="logo-text">Axis</h2>
+            <p>The point where style meets value.</p>
+        </div>
+
+        <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Axis Store | Designed by Axis team</p>
+    </div>
+</footer>
+    <script src="main.js"></script>
+    <script src="sports_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shoes-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <title>shoes</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="ChatGPT Image Apr 26, 2026, 09_50_21 PM.png" alt="Axis" width="50" height="50">
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Categories <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="girls.html">Women's Wear</a></li>
+                        <li><a href="men.html">Men's Wear</a></li>
+                        <li><a href="sports.html">Sports Wear</a></li>
+                        <li><a href="accessories.html">Accessories</a></li>
+                        <li><a href="shoes.html">Shoes</a></li>
+                        <li><a href="bags.html">Bags</a></li>
+                        <li><a href="skin_care.html">Skin Care</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="icons">
+                <div class="search">
+                    <a href="#">
+                        <input type="text" placeholder="Search..." class="search-input">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </div>
+                <div class="theme-toggle" id="themetoggle">
+                    <i class="fa-solid fa-moon" id="themeicon"></i>
+                </div>
+
+                <a href="sign_in.html">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+                <button id="logout-btn"  onclick="logout()">Logout</button>
+                <a href="cart.html">
+
+                    <div class="cart">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span id="cart-count">0</span>
+                    </div>
+                </a>
+            </div>
+        </nav>
+    </header>
+    </br>
+    <h1>Shoes Collection</h1>
+
+    <div class="shoes">
+        <div class="shoes-card">
+            <img src="photos shoes/17.jpg " width="300" height="300">
+            <h3>Brown Leather Boots</h3>
+            <span class="old">1500EGP</span>
+            <span class="new">1000EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+
+        <div class="shoes-card">
+
+
+            <img src="photos shoes/13.jpg " width="300" height="300">
+            <h3>Burgundy Patent Boots</h3>
+            <span class="old">1300EGP</span>
+            <span class="new">1000EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/8.jpg " width="300" height="300">
+            <h3>Dark Red Pointed Boots</h3>
+            <span class="old">1300EGP</span>
+            <span class="new">1000EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/20.jpg " width="300" height="300">
+            <h3>Black Slouchy Boots</h3>
+            <span class="old">1300EGP</span>
+            <span class="new">1000EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/5.jpg " width="300" height="300">
+            <h3>Classic Black Stiletto Boots</h3>
+            <span class="old">1000EGP</span>
+            <span class="new">900EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/3.jpg " width="300" height="300">
+            <h3>Burgundy Block Heel Boots</h3>
+            <span class="old">1200EGP</span>
+            <span class="new">1000EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/6.jpg " width="300" height="300">
+            <h3>Black Leather Block Heel Boots</h3>
+            <span class="old">1000EGP</span>
+            <span class="new">900EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/7.jpg " width="300" height="300">
+            <h3>Cream/Off-white Slouchy Boots</h3>
+            <span class="old">1000EGP</span>
+            <span class="new">900EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/11.jpg " width="300" height="300">
+            <h3>Burgundy Patent Booties</h3>
+            <span class="old">1500EGP</span>
+            <span class="new">1000EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/21.jpg " width="300" height="300">
+            <h3>Olive Green Stiletto Booties</h3>
+            <span class="old">1000EGP</span>
+            <span class="new">800EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/22.jpg " width="300" height="300">
+            <h3>Wine Red Pointed Booties</h3>
+            <span class="old">1000EGP</span>
+            <span class="new">800EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/23.jpg " width="300" height="300">
+            <h3>Black Leather Ankle Boots</h3>
+            <span class="old">1000EGP</span>
+            <span class="new">800EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/16.jpg " width="300" height="300">
+            <h3>Black Designer Heel Boots</h3>
+            <span class="old">1000EGP</span>
+            <span class="new">900EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/15.jpg " width="300" height="300">
+            <h3>Brown Suede Block Heel Boots</h3>
+            <span class="old">1300EGP</span>
+            <span class="new">950EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/19.jpg " width="300" height="300">
+            <h3>Dark Brown Suede Booties</h3>
+            <span class="old">1300EGP</span>
+            <span class="new">950EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/4.jpg " width="300" height="300">
+            <h3>Black Suede High-Heel Boots</h3>
+            <span class="old">1500EGP</span>
+            <span class="new">1000EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/2.jpg " width="300" height="300">
+            <h3>Burgundy Sock Boots</h3>
+            <span class="old">1000EGP</span>
+            <span class="new">850EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/9.jpg " width="300" height="300">
+            <h3>Croc-Effect Burgundy Boots</h3>
+            <span class="old">1000EGP</span>
+            <span class="new">900EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/12.jpg " width="300" height="300">
+            <h3>Maroon Patent Boots</h3>
+            <span class="old">1200EGP</span>
+            <span class="new">1000EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/18.jpg " width="300" height="300">
+            <h3>Dark Brown Leather Boots</h3>
+            <span class="old">1000EGP</span>
+            <span class="new">800EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/1.jpg " width="300" height="300">
+            <h3>Burgundy Bow Flats</h3>
+            <span class="old">900EGP</span>
+            <span class="new">800EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q4.jpg " width="300" height="300">
+            <h3>Burgundy Pointed Slingbacks</h3>
+            <span class="old">800EGP</span>
+            <span class="new">650EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q3.jpg " width="300" height="300">
+            <h3>Tan Pointed Heels</h3>
+            <span class="old">1000EGP</span>
+            <span class="new">850EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q12.jpg " width="300" height="300">
+            <h3>Navy Blue Suede Slingbacks</h3>
+            <span class="old">900EGP</span>
+            <span class="new">700EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q11.jpg " width="300" height="300">
+            <h3>Black Patent Slingbacks</h3>
+            <span class="old">1100EGP</span>
+            <span class="new">900EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q13.jpg " width="300" height="300">
+            <h3>Black Patent Slingbacks</h3>
+            <span class="old">1200EGP</span>
+            <span class="new">1000EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q14.jpg " width="300" height="300">
+            <h3>Light Blue Patent Slingbacks</h3>
+            <span class="old">1500EGP</span>
+            <span class="new">1000EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q22.jpg " width="300" height="300">
+            <h3>Steel Blue Pointed Heels</h3>
+            <span class="old">1500EGP</span>
+            <span class="new">1000EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q15.jpg " width="300" height="300">
+            <h3>Lavender Pleated Heels</h3>
+            <span class="old">1500EGP</span>
+            <span class="new">1000EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q10.jpg " width="300" height="300">
+            <h3>Emerald Green Heels</h3>
+            <span class="old">1500EGP</span>
+            <span class="new">1000EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q43.jpg " width="300" height="300">
+            <h3>Deep Red Pointed Slingbacks</h3>
+            <span class="old">1300EGP</span>
+            <span class="new">1000EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q45.jpg " width="300" height="300">
+            <h3>Grey Ankle-Strap Heels</h3>
+            <span class="old">1200EGP</span>
+            <span class="new">900EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q27.jpg " width="300" height="300">
+            <h3>Red Gradient Pumps</h3>
+            <span class="old">1500EGP</span>
+            <span class="new">1000EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q29.jpg " width="300" height="300">
+            <h3>Dark Chocolate Brown Pumps</h3>
+            <span class="old">1500EGP</span>
+            <span class="new">1000EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q28.jpg " width="300" height="300">
+            <h3>Professional Black Pumps</h3>
+            <span class="old">1500EGP</span>
+            <span class="new">1000EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q34.jpg " width="300" height="300">
+            <h3>Nude Beige Pumps</h3>
+            <span class="old">1500EGP</span>
+            <span class="new">1000EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q52.jpg " width="300" height="300">
+            <h3>Black Pumps with Silver Detail</h3>
+            <span class="old">1500EGP</span>
+            <span class="new">1000EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q24.jpg " width="300" height="300">
+            <h3>Light Grey Stilettos</h3>
+            <span class="old">1500EGP</span>
+            <span class="new">1000EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q26.jpg " width="300" height="300">
+            <h3>Dusty Rose Patent Pumps</h3>
+            <span class="old">1500EGP</span>
+            <span class="new">1000EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q16.jpg " width="300" height="300">
+            <h3>Forest Green Pointed Heels</h3>
+            <span class="old">1300EGP</span>
+            <span class="new">1000EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q20.jpg " width="300" height="300">
+            <h3>Nude Satin Pumps</h3>
+            <span class="old">1500EGP</span>
+            <span class="new">1000EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q37.jpg " width="300" height="300">
+            <h3>Classic White Satin Heels</h3>
+            <span class="old">2000EGP</span>
+            <span class="new">1500EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q42.jpg " width="300" height="300">
+            <h3>White Lace Wedding Shoes</h3>
+            <span class="old">2200EGP</span>
+            <span class="new">1700EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q46.jpg " width="300" height="300">
+            <h3>Black Slingbacks with Crystal Straps</h3>
+            <span class="old">1500EGP</span>
+            <span class="new">1000EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q47.jpg " width="300" height="300">
+            <h3>White Mesh Ribbon Heels</h3>
+            <span class="old">1700EGP</span>
+            <span class="new">1200EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q59.jpg " width="300" height="300">
+            <h3>White Bow Ballet Flats</h3>
+            <span class="old">1500EGP</span>
+            <span class="new">1000EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q61.jpg " width="300" height="300">
+            <h3>Beige Crystal Slingback Flats</h3>
+            <span class="old">1500EGP</span>
+            <span class="new">1000EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q48.jpg " width="300" height="300">
+            <h3>Off-White Bow Pointed Heels</h3>
+            <span class="old">1500EGP</span>
+            <span class="new">1200EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q54.jpg " width="300" height="300">
+            <h3>White Pearl/Crystal Heels</h3>
+            <span class="old">1500EGP</span>
+            <span class="new">1000EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q50.jpg " width="300" height="300">
+            <h3>Black Suede Cross-Strap Heels</h3>
+            <span class="old">1600EGP</span>
+            <span class="new">1300EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q31.jpg " width="300" height="300">
+            <h3>White Minimalist Sandals</h3>
+            <span class="old">1500EGP</span>
+            <span class="new">1000EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q32.jpg " width="300" height="300">
+            <h3>Tan Strappy Sandals</h3>
+            <span class="old">1700EGP</span>
+            <span class="new">1300EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q35.jpg " width="300" height="300">
+            <h3>Rose Gold Metallic Sandals</h3>
+            <span class="old">1500EGP</span>
+            <span class="new">1000EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q36.jpg " width="300" height="300">
+            <h3>White Thin-Strap Sandals</h3>
+            <span class="old">1500EGP</span>
+            <span class="new">1000EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q17.jpg " width="300" height="300">
+            <h3>Green Knotted Pointed Heels</h3>
+            <span class="old">1500EGP</span>
+            <span class="new">1000EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q7.jpg " width="300" height="300">
+            <h3>Dark Brown Square-Toe Sandals</h3>
+            <span class="old">1500EGP</span>
+            <span class="new">1000EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q62.jpg " width="300" height="300">
+            <h3>Grey-to-Black Ombré Pumps</h3>
+            <span class="old">1500EGP</span>
+            <span class="new">1000EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q21.jpg " width="300" height="300">
+            <h3>Baby Blue Square-Toe Sandals</h3>
+            <span class="old">1500EGP</span>
+            <span class="new">1000EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q40.jpg " width="300" height="300">
+            <h3>Black Wrap-Around Strappy Heels</h3>
+            <span class="old">1500EGP</span>
+            <span class="new">1300EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        <div class="shoes-card">
+            <img src="photos shoes/q60.jpg " width="300" height="300">
+            <h3>Nude Full Crystal Sandals</h3>
+            <span class="old">1800EGP</span>
+            <span class="new">1500EGP</span>
+            <button class="cart-btn" onclick="addToCart()">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+                <span class="cart-text">add to cart</span>
+            </button>
+        </div>
+        
+
+    </div>
+    <footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-section about">
+            <h2 class="logo-text">Axis</h2>
+            <p>The point where style meets value.</p>
+        </div>
+
+        <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Axis Store | Designed by Axis team</p>
+    </div>
+</footer>
+    <script src="main.js"></script>
+    <script src="shoes.js"></script>
+</body>
+</html>

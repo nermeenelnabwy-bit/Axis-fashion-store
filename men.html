@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="men.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <title>Men's wear</title>
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="ChatGPT Image Apr 26, 2026, 09_50_21 PM.png" alt="Axis" width="50" height="50"
+                        class="logo-photo">
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Categories <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="girls.html">Women's Wear</a></li>
+                        <li><a href="men.html">Men's Wear</a></li>
+                        <li><a href="sports.html">Sports Wear</a></li>
+                        <li><a href="accessories.html">Accessories</a></li>
+                        <li><a href="shoes.html">Shoes</a></li>
+                        <li><a href="bags.html">Bags</a></li>
+                        <li><a href="skin_care.html">Skin Care</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="icons">
+                <div class="search">
+                    <a href="#">
+                        <input type="text" placeholder="Search..." class="search-input">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </div>
+                <div class="theme-toggle" id="themetoggle">
+                    <i class="fa-solid fa-moon" id="themeicon"></i>
+                </div>
+                <a href="sign_in.html">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+                <button id="logout-btn"  onclick="logout()">Logout</button>
+                <a href="cart.html">
+                    <div class="cart">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span id="cart-count">0</span>
+                    </div>
+                </a>
+            </div>
+        </nav>
+        <br />
+        <h1 class="logo1">Men Section</h1>
+    </header>
+
+    <main>
+
+        <div class="products-container">
+
+            <div class="product-card">
+                <img src="men-imgs/1.jpg" alt="Suit">
+                <div class="product-info">
+                    <h3>Classic Creamy Suit</h3>
+                    <div class="price">
+                        <span class="new-price">1700 EGP</span>
+                        <span class="old-price">2100 EGP</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="men-imgs/2.jpg" alt="Suit">
+                <div class="product-info">
+                    <h3>Dark Chocolate Browen Suit</h3>
+                    <div class="price">
+                        <span class="new-price">1900 EGP</span>
+                        <span class="old-price">2550 EGP</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="men-imgs/3.jpg" alt="Suit">
+                <div class="product-info">
+                    <h3>Stone Grey Plaid Blazer</h3>
+                    <div class="price">
+                        <span class="new-price">1200 EGP</span>
+                        <span class="old-price">1800 EGP</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="men-imgs/4.jpg" alt="Suit">
+                <div class="product-info">
+                    <h3>Slate Grey Modern Blazer</h3>
+                    <div class="price">
+                        <span class="new-price">800 EGP</span>
+                        <span class="old-price">1100 EGP</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="men-imgs/5.jpg" alt="Suit">
+                <div class="product-info">
+                    <h3>Forest Green Tweed Suit</h3>
+                    <div class="price">
+                        <span class="new-price">2400 EGP</span>
+                        <span class="old-price">3000 EGP</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="men-imgs/6.jpg" alt="Suit">
+                <div class="product-info">
+                    <h3>Beige Business Suit</h3>
+                    <div class="price">
+                        <span class="new-price">2000 EGP</span>
+                        <span class="old-price">2250 EGP</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="men-imgs/7.jpg" alt="Suit">
+                <div class="product-info">
+                    <h3>Midnight Navy Blue Suit</h3>
+                    <div class="price">
+                        <span class="new-price">2700 EGP</span>
+                        <span class="old-price">3250 EGP</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="men-imgs/8.jpg" alt="Suit">
+                <div class="product-info">
+                    <h3>Formal Jet Black Suit</h3>
+                    <div class="price">
+                        <span class="new-price">2000 EGP</span>
+                        <span class="old-price">2750 EGP</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="men-imgs/9.jpg" alt="Suit">
+                <div class="product-info">
+                    <h3>Royal Wine Suit</h3>
+                    <div class="price">
+                        <span class="new-price">2200 EGP</span>
+                        <span class="old-price">2800 EGP</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="men-imgs/10.jpg" alt="Suit">
+                <div class="product-info">
+                    <h3>Pure White Wedding Suit</h3>
+                    <div class="price">
+                        <span class="new-price">2500 EGP</span>
+                        <span class="old-price">3000 EGP</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="men-imgs/100.jpg" alt="Casual Wear">
+                <div class="product-info">
+                    <h3>All-Black outfit</h3>
+                    <div class="price">
+                        <span class="new-price">1000 EGP</span>
+                        <span class="old-price">1500 EGP</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="men-imgs/101.jpg" alt="Casual Wear">
+                <div class="product-info">
+                    <h3>Olive Green Casual Set</h3>
+                    <div class="price">
+                        <span class="new-price">800 EGP</span>
+                        <span class="old-price">1100 EGP</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="men-imgs/102.jpg" alt="Casual Wear">
+                <div class="product-info">
+                    <h3>Black Ribbed Polo Shirt</h3>
+                    <div class="price">
+                        <span class="new-price">7500 EGP</span>
+                        <span class="old-price">9500 EGP</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="men-imgs/103.jpg" alt="Casual Wear">
+                <div class="product-info">
+                    <h3>Chocolate Cable-Kint Sweater</h3>
+                    <div class="price">
+                        <span class="new-price">750 EGP</span>
+                        <span class="old-price">950 EGP</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="men-imgs/104.jpg" alt="Casual Wear">
+                <div class="product-info">
+                    <h3>Vanilla Quarter-Zip Sweater</h3>
+                    <div class="price">
+                        <span class="new-price">950 EGP</span>
+                        <span class="old-price">1250 EGP</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="men-imgs/105.jpg" alt="Casual Wear">
+                <div class="product-info">
+                    <h3>Earth Browen Ribbed Polo</h3>
+                    <div class="price">
+                        <span class="new-price">750 EGP</span>
+                        <span class="old-price">900 EGP</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="men-imgs/106.jpg" alt="Casual Wear">
+                <div class="product-info">
+                    <h3>Midnight Ribbed Sweater</h3>
+                    <div class="price">
+                        <span class="new-price">900 EGP</span>
+                        <span class="old-price">1200 EGP</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="men-imgs/107.jpg" alt="Sweatsuit">
+                <div class="product-info">
+                    <h3>Grey Sweatsuit</h3>
+                    <div class="price">
+                        <span class="new-price">1000 EGP</span>
+                        <span class="old-price">1500 EGP</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="men-imgs/108.jpg" alt="Sweatsuit">
+                <div class="product-info">
+                    <h3>Black Hoodie & Sweatpants</h3>
+                    <div class="price">
+                        <span class="new-price">1100 EGP</span>
+                        <span class="old-price">1600 EGP</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="men-imgs/109.jpg" alt="Summer Clothes">
+                <div class="product-info">
+                    <h3>Off-White Oversized Day Set</h3>
+                    <div class="price">
+                        <span class="new-price">500 EGP</span>
+                        <span class="old-price">750 EGP</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="men-imgs/110.jpg" alt="Summer Clothes">
+                <div class="product-info">
+                    <h3>Retro Beach Green Outfit</h3>
+                    <div class="price">
+                        <span class="new-price">550 EGP</span>
+                        <span class="old-price">750 EGP</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="men-imgs/111.jpg" alt="Summer Clothes">
+                <div class="product-info">
+                    <h3>Urban Vintage White & Denim</h3>
+                    <div class="price">
+                        <span class="new-price">950 EGP</span>
+                        <span class="old-price">1200 EGP</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="men-imgs/154.jpg" alt="Pajama">
+                <div class="product-info">
+                    <h3>Midnight Plaid Classic Pajama</h3>
+                    <div class="price">
+                        <span class="new-price">800 EGP</span>
+                        <span class="old-price">950 EGP</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="men-imgs/155.jpg" alt="Pajama">
+                <div class="product-info">
+                    <h3>Silver Grey Check Pajama</h3>
+                    <div class="price">
+                        <span class="new-price">800 EGP</span>
+                        <span class="old-price">950 EGP</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="men-imgs/150.jpg" alt="Pajama">
+                <div class="product-info">
+                    <h3>Grey Comfort Lounge Set</h3>
+                    <div class="price">
+                        <span class="new-price">750 EGP</span>
+                        <span class="old-price">900 EGP</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="men-imgs/151.jpg" alt="Pajama">
+                <div class="product-info">
+                    <h3>Home Comfort Outfit</h3>
+                    <div class="price">
+                        <span class="new-price">650 EGP</span>
+                        <span class="old-price">800 EGP</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="men-imgs/153.jpg" alt="Pajama">
+                <div class="product-info">
+                    <h3>Navy Soft Cotton Pajama</h3>
+                    <div class="price">
+                        <span class="new-price">600 EGP</span>
+                        <span class="old-price">750 EGP</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="men-imgs/152.jpg" alt="Pajama">
+                <div class="product-info">
+                    <h3>Casual Checkered Pajama</h3>
+                    <div class="price">
+                        <span class="new-price">750 EGP</span>
+                        <span class="old-price">900 EGP</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-text">Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2 class="logo-text">Axis</h2>
+                <p>The point where style meets value.</p>
+            </div>
+
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Axis Store | Designed by Axis team</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="men.js"></script>
+</body>
+
+</html>
